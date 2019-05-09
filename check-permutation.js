@@ -3,11 +3,7 @@
 isPermutation = function(myString1, myString2) {
     if (myString1.length != myString2.length) return false;
     
-    var listChar = [];
-	
-    for (var i = 0; i < myString1.length; i++){
-        listChar.push(myString1[i]);
-    }
+    var listChar = Array.from(myString1);
     
     for (var i = 0; i < myString1.length; i++){
         if (listChar.includes(myString2[i])) {
